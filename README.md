@@ -4,10 +4,12 @@
 
 - Surface Pro 6 i5-8250U (Kaby-Lake R)
 - OpenRC
-- Btrfs
-- Current kernel version -- vanilla 5.9.13 with
+- GCC 10.2
+- Btrfs (hopefully snapshot support in grub soon)
+- Current kernel version -- vanilla 5.10.2 with
   [linux-surface patchset](https://github.com/linux-surface/linux-surface).
-- suckless dwm
+- No-Multilib profile (32 bit instruction emulation disabled in kernel)
+- suckless setup (dwm, st, etc.)
 
 I am considering compiling a tutorial for
 installing Gentoo on surface products
