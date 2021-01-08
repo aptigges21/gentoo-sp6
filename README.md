@@ -9,17 +9,12 @@
 - Btrfs (hopefully snapshot support in grub soon)
 - No-Multilib profile (32 bit instruction emulation disabled in kernel)
 - suckless setup (dwm, st, etc.)
-- Current kernel version -- 5.10.4-gentoo (~amd64) with
+- Current kernel version -- 5.10.5-gentoo (~amd64) with
   [linux-surface patchset](https://github.com/linux-surface/linux-surface).
   Patching can be achieved by cloning the repository and running:
   ```
   for i in [linux-surface-repo]/patches/5.10/*.patch; do patch -p1 < $i; done
   ```
-
-##### For kernel 5.10.4:
-Applying the patches to 5.10.4 leads to conflicts. I replied no to each (default option)
-and have not had problems yet.
-
 ##### Notes:
 I am considering compiling a tutorial for
 installing Gentoo on surface products
