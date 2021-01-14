@@ -9,7 +9,7 @@
 - Btrfs (hopefully snapshot support in grub soon)
 - No-Multilib profile (32 bit instruction emulation disabled in kernel)
 - suckless setup (dwm, st, etc.)
-- Current kernel version -- 5.10.5-gentoo (~amd64) with
+- Current kernel version -- 5.10.7-gentoo (~amd64) with
   [linux-surface patchset](https://github.com/linux-surface/linux-surface).
   Patching can be achieved by cloning the repository and running:
   ```
