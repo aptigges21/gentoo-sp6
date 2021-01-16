@@ -1,0 +1,30 @@
+#!/bin/bash
+
+dir=/usr/src/linux-surface
+
+# Get kernel patch version
+echo Patch version?
+read ver
+
+# Directories of old and new kernels
+echo Old kernel version?
+read kver_old
+echo New kernel version?
+read kver_new
+
+echo ___updating git repository___
+# Update linux-surface git repository
+cd $dir
+git pull
+echo ___update complete___
+
+rm /usr/src/linux
+ln -s /usr/src/*$kver_new* /usr/src/linux
+
+# Patch linux kernel
+cd /usr/src/linux
+for i in $dir/patches/$ver/*.patch; do patch -p1 < $i; done 
+
+cp /usr/src/*$kver_old*/.config /usr/src/linux
+
+cd /usr/src/linux
