@@ -32,10 +32,11 @@ at simplifying the patching process (suggestions welcome!).
 For now this is only useful when moving to a new kernel version.
 
 Using:
-- Place the shell script in your `/usr/src` folder
-- Edit the dir variable in the script to be the location of where you store the linux-surface patchset -- the script will perform a git pull automatically each time run
+- Edit the dir variable in the script to be the location of where you store 
+    the linux-surface patchset -- the script will perform a git pull 
+    automatically each time run (I keep mine in /usr/src)
 - Make sure it is executable using `chmod +x surface-patch` if necessary
-- Run with ./surface-patch
+- Run with ./surface-patch (I suggest using sudo -s beforehand)
 
 On the current kernel I gave the following input:
 ```
